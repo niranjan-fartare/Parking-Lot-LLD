@@ -1,18 +1,51 @@
-## Getting Started
+## Parking Lot LLD in Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Requirements
 
-## Folder Structure
+- Multiple Floors
+- Multiple Entry Gates & Exit Gates
+- Multiple types of Vehicles (Parking Spots)
+- Operator at every entry and exit
+- Ticket generation at every gate
+- Operator assigns spots to vehicles
+- Parking fees calculated at exit gate
+- Different payment modes
+- Store operator details
+- Store vehicle details
 
-The workspace contains two folders by default, where:
+## Classes
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- ParkingLot
+- ParkingLotStatus
+- Floor
+- User
+- Operator
+- Gate
+- GateType
+- Vehicle
+- VehicleType
+- Ticket
+- Spot
+- SpotStatus
+- EVSpot
+- Meter
+- Bill
+- BillStatus
+- Payment
+- PaymentMethod
+- PaymentStatus
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Clarifications
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- How is fee calculated ? (Fixed Fee, Hourly basis, Increasing fee based on hours)
+- How are parking spots allocated ?
+- Partial payments supported ?
+- Support Electric Vehicle parking spot with charging
+- EV Charging Fees
 
-## Dependency Management
+## Design Patterns
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Strategy Design Pattern for Fees Calculation
+- Strategy Design Pattern for Spot Assignment
+- Adapter Design Pattern for Payment
+
